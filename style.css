@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+} /*this targets the entire html file, so you either write html{} or *{}. It is the same thing*/
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden; /*to prevent scrolling on the x asis */
+    box-sizing: border-box;
+    background-color: #f9f7f3;
+    font-family: "Lora", serif;
+    color: #1b2629;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*-----------------------------------------------*/
+.container {
+    padding: 30px 50px;
+}
+/*-------NAVBAR---------*/
+.navbar .content {
+    display: flex;
+}
+.navbar .content .title {
+    font-size: 2rem;
+    margin-top: 5px;
+}
+.search_recipes {
+    background-color: white;
+    border-radius: 10px;
+    padding: 17px 25px 17px 20px;
+    margin-right: 330px;
+    margin-left: 40px;
+    color: #5c5c5c;
+}
+.search_recipes i, .search_for_recipes i {
+    color: #5c5c5c60;
+    font-size: 1rem;
+}
+.search_recipes input, .search_for_recipes input {
+    font-family: "Inter", sans-serif;
+    border: none;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+.navbar_list li :hover{
+    text-decoration: underline #9c702a;
+}
+
+.socialicons {
+    color: #9c702a;
+}
+.navbar_list, .socialicons {
+    margin-top: 15px;
+}
+.navbar_list {
+    display: flex;
+    gap: 40px;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+}
+
+.socialicons{
+    display: flex;
+    margin-left: 40px;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+/*----x----NAVBAR----x----*/
+
+/* -- -------SECTION 1--------- */
+.blogtemplate {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    align-items: center;
+    gap: 30px;
+}
+.blogtemplate h1 {
+    font-size: 4rem;
+    margin: 0 350px 20px 350px;
+    text-align: center;
+    
+}
+.search_for_recipes {
+    background-color: white;
+    border-radius: 10px;
+    padding: 17px 300px 17px 20px;
+    color: #5c5c5c;
+}
+.menu_buttons {
+    display: flex;
+    gap: 20px;
+}
+.menu_buttons button, .gallery button{
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0.2rem;
+}
+button.one {
+    background-color: #f0f5c4;
+    color:#59871f;
+}
+button.two {
+    background-color: #efedfa;
+    color: #3c3a8f;
+}
+button.three {
+    background-color: #e5f7f3;
+    color: #1f8787;
+}
+button.four {
+    background-color: #e8f5fa;
+    color: #397a9e;
+}
+button.five {
+    background-color: #feefc9;
+    color: #d16400;
+}
+button.six {
+    background-color: #ffeae3;
+    color: #f0493e;
+}
+/* ----x----SECTION 1----x---- */
+
+/* -- -------SECTION 2--------- */
+.viewrecipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+}
+.viewrecipes .image {
+    position: relative;
+}
+
+.viewrecipes img{
+    width: 700px;
+    height: 500px;
+    border-radius: 30px;
+    object-fit: cover; 
+}
+.viewrecipes .image .featured {
+    position: absolute;
+    top: 30px;
+    right: 68%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: solid 1px orange;
+    letter-spacing: 0.2rem;
+    font-family: "Inter", sans-serif;
+}
+.viewrecipes .text{
+    margin-top: 35px;    
+    margin-right: 20px;
+}
+.viewrecipes .text h2 {
+    font-size: 3.4rem;
+}
+
+.viewrecipes .text p {
+    margin: 30px 5px 30px 0;
+    line-height: 1.8;
+    font-size: 1rem;
+    color:#5c5c5c;
+    font-family: "Inter", sans-serif;
+}
+
+.viewrecipes .text button, .viewall .viewrecipe {
+    padding: 20px 50px;
+    font-size: 1rem;
+    background-color: #f9f7f3;
+    border-radius: 10px;
+    border: solid 1px #9c702a;
+    color:#5c5c5c;
+    font-family: "Inter", sans-serif;
+}
+/* ----x----SECTION 2----x---- */
+
+/* -- -------SECTION 3--------- */
+.lastest_recipes{
+    margin-top: 150px;
+}
+.lastest_recipes h2 {
+    font-size: 4rem;
+}
+.lastest_recipes .gallery {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+.gal1, .gal2, .gal3 {
+    background-color: white;
+    border-radius: 30px;
+    padding-bottom: 30px;
+}
+.gallery img {
+    height: 250px;
+    width: 400px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.gallery .content {
+    padding: 30px 0 0 40px;
+}
+.gallery p.text {
+    font-size: 2rem;
+    padding-right: 70px;
+    font-weight: bold;
+}
+.gallery .subgal1, .gallery .subgal2, .gallery .subgal3 {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between
+}
+.gallery .duration {
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.gallery .duration i {
+    margin-top: 2px;
+    color: #5c5c5c56;
+}
+/* ----x----SECTION 3----x---- */
+
+/* -- -------SECTION 4--------- */
+.viewall {
+    margin-top: 45px;
+    text-align: center;
+}
+/* ----x----SECTION 4----x---- */
+
+/* -- -------FOOTER--------- */
+footer{
+    margin-top: 70px;
+    font-size: 0.5rem;
+    margin-bottom: 0;
+    color: #9c702a;  
+}
+/* ----x----FOOTER----x---- */
